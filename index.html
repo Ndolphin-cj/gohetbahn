@@ -41,16 +41,17 @@
 
       <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-database.js"></script>
       <script>
-          const firebaseApp = firebase.initializeApp({
-              apiKey: "AIzaSyDn7Gpdt0jiCjahRH_PjNLfRWleYbSlzzw",
-              authDomain: "go-donut-31579312.firebaseapp.com",
-              databaseURL: "https://go-donut-31579312-default-rtdb.firebaseio.com/",
-              projectId: "go-donut-31579312",
-              storageBucket: "go-donut-31579312.appspot.com",
-              messagingSenderId: "1054140894648",
-              appId: "1:1054140894648:web:a737079256d58e2a70534d",
-              measurementId: "G-9215E18MEL"
-          });
+        var firebaseConfig = {
+          	  apiKey: "AIzaSyDn7Gpdt0jiCjahRH_PjNLfRWleYbSlzzw",
+ 		 authDomain: "go-donut-31579312.firebaseapp.com",
+ 		 databaseURL: "https://go-donut-31579312-default-rtdb.firebaseio.com",
+  		projectId: "go-donut-31579312",
+  		storageBucket: "go-donut-31579312.appspot.com",
+ 		 messagingSenderId: "1054140894648",
+ 		 appId: "1:1054140894648:web:a737079256d58e2a70534d",
+ 		 measurementId: "G-9215E18MEL"
+          };
+   firebase.initializeApp(firebaseConfig);
       </script>
   </body>
 </script>
