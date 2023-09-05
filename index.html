@@ -32,9 +32,9 @@
               companyName: "NdolphinConnect",
               productName: "고! 햇반!",
               productVersion: "1.21",
-              // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
-              // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-          });
+              matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+              devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+          }).then((unityInstance) => { console.log(unityInstance); mainUnityInstance = unityInstance});
       </script>
       <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 
