@@ -39,7 +39,7 @@
           script.onload = () => {
               createUnityInstance(canvas, config, (progress) => { })
                   .then((unityInstance) => {
-                      this.unityInstance = unityInstance;
+                      window.unityInstance = unityInstance;
                       const x = document.getElementById("tip-first");
                       x.style.display = "block";
                       loader.style.display = "none";
@@ -60,7 +60,7 @@
           productVersion: "1.21",
           matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
           devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
-        }).then((unityInstance) => {window.unityInstance = unityInstance;});;
+        };
       </script>
       <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 
